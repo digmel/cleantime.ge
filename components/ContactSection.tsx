@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { ContactSectionIcon } from "../icons";
-import { StoreInfo } from "./StoreInfo";
 import { TextInput } from "./TextInput";
 
 const URL =
