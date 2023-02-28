@@ -5,13 +5,24 @@ module.exports = {
     "./icons/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#1C55A2",
+        light: "#F9FBFC",
+        section: "#FAFAFA",
+        body: "#646464",
+        "dark-100": "#27272A",
+        "dark-200": "#18181B",
+        "accent-100": "#FCDED6",
+        "accent-200": "#FFC3B2",
+      },
+    },
     container: {
       center: true,
     },
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      sans: ["Poppins", "sans-serif"],
+      serif: ["Poppins", "serif"],
     },
   },
   plugins: [],
