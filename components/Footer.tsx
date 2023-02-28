@@ -2,10 +2,12 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="py-6 border-t border-zinc-400 border-opacity-50 flex md:justify-start justify-center md:mt-8 mt-24 mx-6  md:mx-24  ">
-      <h1 className="text-zinc-400 text-sm md:text-base  font-extralight">
-        © 2022 your_website.com
-      </h1>
+    <div className="md:mx-36 mx-12 py-4 flex items-center md:justify-around border-t border-dark-100 border-opacity-10 flex-col md:flex-row">
+      <div className="flex-initial flex justify-around self-center">
+        <h1 className="text-sm text-end font-extralight text-dark-100 opacity-50">
+          2023 All rights reserved © Clean Time LLC
+        </h1>
+      </div>
     </div>
   );
 };
