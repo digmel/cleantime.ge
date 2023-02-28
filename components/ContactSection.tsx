@@ -34,7 +34,10 @@ export const ContactSection = () => {
   }
 
   return (
-    <div className="flex flex-col items-center md:mt-32 mt-24">
+    <div
+      id="contact-form"
+      className="flex flex-col items-center md:mt-32 pt-24"
+    >
       <h1 className="text-primary text-2xl">Contact</h1>
 
       <div className="md:w-fit rounded-lg flex md:flex-row flex-col-reverse py-12 md:px-14">
