@@ -1,16 +1,16 @@
 import React from "react";
-import { RocketIcon } from "../icons";
+import { Logo, PhoneIcon } from "../icons";
 
 export const Header = () => {
   return (
-    <div className="bg-zinc-800 pt-4 pb-2 px-6 md:px-24 flex justify-between  border-zinc-50 border-b border-opacity-10 ">
-      <RocketIcon />
-      <div className="flex flex-row -mt-1 items-center text-zinc-50">
-        <h1 className="mx-2">middle section</h1>
+    <div className="bg-light py-2 md:px-32 flex md:justify-between justify-center border-b border-dark-100 border-opacity-10">
+      <div className="flex w-40">
+        <Logo />
       </div>
 
-      <div>
-        <h1>menu</h1>
+      <div className="md:flex flex-row md:items-center md:w-40 hidden md:visible text-primary">
+        <PhoneIcon />
+        <h1 className="font-extralight ml-2">599 945 200</h1>
       </div>
     </div>
   );
