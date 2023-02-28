@@ -10,19 +10,19 @@ type TLayout = {
 
 export const Layout = ({ children, title }: TLayout) => {
   return (
-    <div className=" bg-zinc-900 md:h-screen w-screen md:fixed flex flex-col">
+    <div className=" bg-light md:min-h-screen w-screen flex flex-col">
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="flex-initial w-screen pb-4">
+      <div className="flex-initial w-screen pb-4 fixed">
         <Header />
       </div>
 
-      <div className="flex-grow w-screen">{children}</div>
+      <div className="flex-grow w-screen overflow-visible">{children}</div>
 
-      <div className="flex-initial w-screen">
+      <div className="flex-initial w-screen md:mt-56 mt-48">
         <Footer />
       </div>
     </div>
