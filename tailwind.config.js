@@ -24,8 +24,8 @@ module.exports = {
       center: true,
     },
     fontFamily: {
-      sans: ["Poppins", "sans-serif"],
-      serif: ["Poppins", "serif"],
+      sans: ["Noto Sans Georgian", "sans-serif"],
+      serif: ["Noto Sans Georgian", "serif"],
     },
   },
   plugins: [],
