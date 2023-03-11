@@ -1,17 +1,41 @@
+import Link from "next/link";
 import React from "react";
-import { Logo, PhoneIcon } from "../icons";
+import { Logo, LogoMobile, MenuIcon } from "../icons";
+import { Text } from "./Text";
+import { Button } from "./Button";
+import { usePlatform } from "../hooks";
 
 export const Header = () => {
-  return (
-    <div className="bg-light py-2 md:px-32 flex md:justify-between justify-center border-b border-dark-100 border-opacity-10">
-      <div className="flex w-40">
-        <Logo />
-      </div>
+  const isMobile = usePlatform();
 
-      <div className="md:flex flex-row md:items-center md:w-40 hidden md:visible text-primary">
-        <PhoneIcon />
-        <h1 className="font-extralight ml-2">599 945 200</h1>
-      </div>
-    </div>
+  return (
+    <>
+      {isMobile ? (
+        <div className="bg-light py-5 px-6 flex justify-between items-center border-b border-blue-100 border-opacity-50">
+          <LogoMobile />
+          <div className="flex">
+            <MenuIcon />
+          </div>
+        </div>
+      ) : (
+        <div className="bg-light py-3 px-48 flex justify-between items-center border-b border-blue-100 border-opacity-50">
+          <div className="flex">
+            <Logo />
+          </div>
+
+          <div className="md:flex flex-row items-center gap-12">
+            <Link href="/">
+              <Text variant="label">სერვისები</Text>
+            </Link>
+
+            <Link href="/">
+              <Text variant="label">ჩვენს შესახებ</Text>
+            </Link>
+
+            <Button label="კონტაქტი" />
+          </div>
+        </div>
+      )}
+    </>
   );
 };

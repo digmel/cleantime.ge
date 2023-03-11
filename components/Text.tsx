@@ -40,7 +40,7 @@ export const Text = ({ children, variant, className }: TText) => {
     case "label":
       return (
         <p
-          className={`font-medium md:text-base text-sm text-blue-400 ${className}`}
+          className={`font-medium md:text-base text-sm text-blue-300 ${className}`}
         >
           {children}
         </p>
