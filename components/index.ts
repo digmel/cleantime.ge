@@ -7,3 +7,4 @@ export * from "./Button";
 export * from "./Card";
 export * from "./Layout";
 export * from "./HeroSection";
+export * from "./ServicesSection";
