@@ -17,7 +17,7 @@ export const Button = ({
   return (
     <button
       onClick={() => onClick()}
-      className={`"md:py-3 md:px-6 py-[10px] px-4 rounded-xl bg-blue-300 ${className}`}
+      className={`"md:py-3 md:px-6 py-[10px] px-4 rounded-xl bg-blue-300 hover:opacity-70 ${className}`}
     >
       {label && (
         <Text variant="label" className="text-white">

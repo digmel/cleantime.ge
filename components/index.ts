@@ -5,3 +5,5 @@ export * from "./TextInput";
 export * from "./Text";
 export * from "./Button";
 export * from "./Card";
+export * from "./Layout";
+export * from "./HeroSection";
