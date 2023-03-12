@@ -1,4 +1,5 @@
 import {
+  AboutSection,
   ContactSection,
   HeroSection,
   Layout,
@@ -10,6 +11,7 @@ export default function Home() {
     <Layout title="cleantime.ge">
       <HeroSection />
       <ServicesSection />
+      <AboutSection />
       {/* <ContactSection /> */}
     </Layout>
   );

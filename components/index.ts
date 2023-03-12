@@ -8,3 +8,4 @@ export * from "./Card";
 export * from "./Layout";
 export * from "./HeroSection";
 export * from "./ServicesSection";
+export * from "./AboutSection";

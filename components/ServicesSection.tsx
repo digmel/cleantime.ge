@@ -4,14 +4,14 @@ import { Card } from "./Card";
 
 export const ServicesSection = () => {
   return (
-    <div className="flex flex-col items-center md:mt-36 mt-16 pb-32">
+    <div className="flex flex-col items-center md:mt-32 mt-16">
       <Text variant="title">სერვისები</Text>
       <Text variant="body" className="mt-6 md:max-w-xl text-center">
         საბოლოო ფასს ვადგენთ შეფასების შემდგომ ადგილზე მოსვლით. აქ უნდა იყოს
         შესაბამისი სერვისის უფრო დეტალური აღწერა.
       </Text>
 
-      <div className="mt-12 flex md:gap-10 gap-9 flex-col md:flex-row mx-6">
+      <div className="mt-12 flex md:gap-10 gap-9 flex-col md:flex-row md:mx-0 mx-6">
         <Card
           image="services-1"
           title="სახლის სტანდარტული დალაგება"
