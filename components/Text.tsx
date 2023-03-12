@@ -22,7 +22,7 @@ export const Text = ({ children, variant, className }: TText) => {
     case "subtitle":
       return (
         <h2
-          className={`font-bold md:text-lg text-base text-blue-400 ${className}`}
+          className={`font-bold md:text-lg text-base text-blue-300 ${className}`}
         >
           {children}
         </h2>

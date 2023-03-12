@@ -23,7 +23,7 @@ export const Layout = ({ children, title }: TLayout) => {
       <div className="pt-14 w-screen overflow-visible">{children}</div>
 
       <div className="flex-initial w-screen md:mt-56 mt-48">
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
