@@ -4,7 +4,7 @@ import { Card } from "./Card";
 
 export const ServicesSection = () => {
   return (
-    <div className="flex flex-col items-center md:mt-36 mt-16">
+    <div className="flex flex-col items-center md:mt-36 mt-16 pb-32">
       <Text variant="title">სერვისები</Text>
       <Text variant="body" className="mt-6 md:max-w-xl text-center">
         საბოლოო ფასს ვადგენთ შეფასების შემდგომ ადგილზე მოსვლით. ჩვენი

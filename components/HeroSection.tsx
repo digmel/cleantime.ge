@@ -6,7 +6,7 @@ import Image from "next/image";
 export const HeroSection = () => {
   return (
     <>
-      <div className="relative object-cover md:h-[80vh] h-[70vh] bg-cover bg-center">
+      <div className="relative object-cover md:h-[80vh] h-[60vh] bg-cover bg-center">
         <Image src="/assets/hero.png" fill alt="1" quality={100} />
       </div>
 
