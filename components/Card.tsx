@@ -19,9 +19,9 @@ export const Card = ({
   link = "/",
 }: TCard) => {
   return (
-    <Link className="md:w-1/2 flex flex-col md:mx-6 mb-12" href={link}>
+    <Link href={link}>
       <div
-        className={`md:h-96 h-64 mb-4 rounded flex justify-center items-center ${className}`}
+        className={`bg-gray-100 rounded-xl max-w-sm shadow-md -bottom-4 ${className}`}
       >
         {image && (
           <Image
@@ -29,15 +29,21 @@ export const Card = ({
             width={400}
             height={229}
             alt="1"
-            quality={30}
+            quality={100}
+            style={{ borderRadius: "12px 12px 0 0" }}
           />
         )}
-      </div>
-      <Text variant="subtitle" className="mb-2">
-        {title}
-      </Text>
 
-      <Text variant="body">{subtitle}</Text>
+        <div className="px-5">
+          <Text variant="subtitle" className="mb-2 mt-5">
+            {title}
+          </Text>
+
+          <Text variant="body" className="pb-8 text-gray-300">
+            {subtitle}
+          </Text>
+        </div>
+      </div>
     </Link>
   );
 };
