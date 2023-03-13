@@ -16,7 +16,7 @@ export const Footer = () => {
           </div>
         )}
         <Text variant="body" className="max-w-xs">
-          2023 © ყველა უფლება დაცულია შპს. "Clean Time"-ის მიერ.
+          2023 © ყველა უფლება დაცულია შპს. &quot;Clean Time&quot;-ის მიერ.
         </Text>
       </div>
 
