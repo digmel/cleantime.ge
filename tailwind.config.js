@@ -18,6 +18,7 @@ module.exports = {
         accent: "#FFE55B",
         error: "#D52F45",
         success: "#2FD55D",
+        section: "#8EC8F7",
       },
     },
     container: {

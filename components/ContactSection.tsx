@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { TextInput } from "./TextInput";
+import { Text } from "./Text";
+import Image from "next/image";
+import { Button } from "./Button";
+import { EmailIcon, FacebookIcon, PhoneIcon, WhatsappIcon } from "../icons";
 
 const URL =
   "https://script.google.com/macros/s/AKfycbyWA81iY-k9_UAx78vEvaMEwJEtXcpJuiqr1lh3RmvRHauPZjP7XXpl7ReJPkMT5Ujo1w/exec";
@@ -36,38 +40,75 @@ export const ContactSection = () => {
   return (
     <div
       id="contact-form"
-      className="flex flex-col items-center md:mt-32 pt-24"
+      className="bg-section bg-opacity-20 flex md:flex-row flex-col items-center justify-center md:py-16 md:mt-40 mt-24 pt-8 pb-12"
     >
-      <h1 className="text-primary text-2xl">Contact</h1>
+      <div className="md:mb-12 md:mx-6 ml-2 mr-6 md:ml-0 md:mr-0">
+        <Image
+          src="/assets/contactCover.png"
+          width={600}
+          height={600}
+          alt="1"
+          quality={100}
+        />
+      </div>
 
-      <div className="md:w-fit rounded-lg flex md:flex-row flex-col-reverse py-12 md:px-14">
-        <div className="flex basis-3/4 flex-col items-center justify-center">
+      <div className="flex flex-col items-start md:py-16 bg-white rounded-2xl md:px-32 md:w-fit w-full px-6 md:-ml-12 -mt-5 md:-mt-0 py-8 ">
+        <Text variant="title">დაგვიკავშირდით!</Text>
+
+        <div className="flex md:gap-8 md:flex-row flex-col gap-0">
+          <div className="flex flex-row mt-8 gap-2">
+            <PhoneIcon />
+            <Text variant="body" className="text-opacity-70">
+              +(995) 599 945 200
+            </Text>
+          </div>
+
+          <div className="flex flex-row md:mt-8 mt-4 gap-2">
+            <WhatsappIcon />
+            <Text variant="body" className="text-opacity-70">
+              +(995) 599 945 200
+            </Text>
+          </div>
+        </div>
+
+        <div className="flex md:gap-4 md:flex-row flex-col gap-0">
+          <div className="flex flex-row md:mt-8 mt-4 gap-2">
+            <EmailIcon />
+            <Text variant="body" className="text-opacity-70">
+              info@cleantime.com
+            </Text>
+          </div>
+
+          <div className="flex flex-row md:mt-8 mt-4 gap-2">
+            <FacebookIcon />
+            <Text variant="body" className="text-opacity-70">
+              fb.com/cleantime.georgia
+            </Text>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-start md:mt-12 mt-8 justify-center">
           <TextInput
-            label="Name"
-            className="mb-8"
+            label="სახელი"
+            className="md:mb-6 mb-5"
             onChange={(e: any) => setName(e.target.value)}
             value={name}
           />
           <TextInput
-            label="Email"
-            className="mb-8"
+            label="ელ-ფოსტა"
+            className="md:mb-6 mb-5"
             onChange={(e: any) => setEmail(e.target.value)}
             value={email}
           />
           <TextInput
-            label="Message"
+            label="მესიჯი"
             variant="textarea"
-            className="mb-8"
+            className="mb-6"
             onChange={(e: any) => setMessage(e.target.value)}
             value={message}
           />
 
-          <button
-            className="w-32 h-12 bg-primary rounded self-center"
-            onClick={sendEmail}
-          >
-            <h1 className="text-light text-lg">Submit</h1>
-          </button>
+          <Button label="გაგზავნა" onClick={sendEmail} />
         </div>
       </div>
     </div>
