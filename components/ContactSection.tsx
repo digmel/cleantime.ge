@@ -4,6 +4,7 @@ import { Text } from "./Text";
 import Image from "next/image";
 import { Button } from "./Button";
 import { EmailIcon, FacebookIcon, PhoneIcon, WhatsappIcon } from "../icons";
+import { SocialsInfo } from "./SocialsInfo";
 
 const URL =
   "https://script.google.com/macros/s/AKfycbyWA81iY-k9_UAx78vEvaMEwJEtXcpJuiqr1lh3RmvRHauPZjP7XXpl7ReJPkMT5Ujo1w/exec";
@@ -55,37 +56,7 @@ export const ContactSection = () => {
       <div className="flex flex-col items-start md:py-16 bg-white rounded-2xl md:px-32 md:w-fit w-full px-6 md:-ml-12 -mt-5 md:-mt-0 py-8 ">
         <Text variant="title">დაგვიკავშირდით!</Text>
 
-        <div className="flex md:gap-8 md:flex-row flex-col gap-0">
-          <div className="flex flex-row mt-8 gap-2">
-            <PhoneIcon />
-            <Text variant="body" className="text-opacity-70">
-              +(995) 599 945 200
-            </Text>
-          </div>
-
-          <div className="flex flex-row md:mt-8 mt-4 gap-2">
-            <WhatsappIcon />
-            <Text variant="body" className="text-opacity-70">
-              +(995) 599 945 200
-            </Text>
-          </div>
-        </div>
-
-        <div className="flex md:gap-4 md:flex-row flex-col gap-0">
-          <div className="flex flex-row md:mt-8 mt-4 gap-2">
-            <EmailIcon />
-            <Text variant="body" className="text-opacity-70">
-              info@cleantime.com
-            </Text>
-          </div>
-
-          <div className="flex flex-row md:mt-8 mt-4 gap-2">
-            <FacebookIcon />
-            <Text variant="body" className="text-opacity-70">
-              fb.com/cleantime.georgia
-            </Text>
-          </div>
-        </div>
+        <SocialsInfo />
 
         <div className="flex flex-col items-start md:mt-12 mt-8 justify-center">
           <TextInput
