@@ -1,13 +1,18 @@
-import { ContactSection, HeroSection, Layout, Text } from "../components";
+import {
+  AboutSection,
+  ContactSection,
+  HeroSection,
+  Layout,
+  ServicesSection,
+} from "../components";
 
 export default function Home() {
   return (
-    <Layout title="cleantime.ge">
-      <div className="flex justify-center items-center pt-64">
-        <Text variant="subtitle">საიტი მალე დაემატება!</Text>
-      </div>
-      {/* <HeroSection />
-      <ContactSection /> */}
+    <Layout title="CLEAN TIME LLC">
+      <HeroSection />
+      <ServicesSection />
+      <AboutSection />
+      <ContactSection />
     </Layout>
   );
 }

@@ -53,7 +53,7 @@ export const ContactSection = () => {
         />
       </div>
 
-      <div className="flex flex-col items-start md:py-16 bg-white rounded-2xl md:px-32 md:w-fit w-full px-6 md:-ml-12 -mt-5 md:-mt-0 py-8 ">
+      <div className="flex flex-col items-start md:py-16 bg-white rounded-2xl md:px-32 md:w-fit w-full px-6 md:-ml-12 -mt-8 md:-mt-0 py-8 ">
         <Text variant="title">დაგვიკავშირდით!</Text>
 
         <SocialsInfo />

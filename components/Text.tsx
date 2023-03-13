@@ -31,7 +31,7 @@ export const Text = ({ children, variant, className }: TText) => {
     case "body":
       return (
         <p
-          className={`font-normal md:text-base text-sm text-blue-400 ${className}`}
+          className={`font-normal md:text-base text-sm text-blue-300 ${className}`}
         >
           {children}
         </p>
