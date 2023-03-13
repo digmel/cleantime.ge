@@ -1,6 +1,7 @@
 import React from "react";
 import { Text } from "./Text";
 import { EmailIcon, FacebookIcon, PhoneIcon, WhatsappIcon } from "../icons";
+import Link from "next/link";
 
 export const SocialsInfo = () => {
   return (
@@ -28,12 +29,16 @@ export const SocialsInfo = () => {
           </Text>
         </div>
 
-        <div className="flex flex-row md:mt-8 mt-4 gap-2">
+        <Link
+          className="flex flex-row md:mt-8 mt-4 gap-2"
+          href="https://www.facebook.com/cleantime.georgia"
+          target="_blank"
+        >
           <FacebookIcon />
           <Text variant="body" className="text-opacity-70">
             fb.com/cleantime.georgia
           </Text>
-        </div>
+        </Link>
       </div>
     </>
   );

@@ -27,23 +27,23 @@ export const Footer = () => {
           </Text>
 
           <div className="gap-4 flex flex-col">
-            <a href={"./"} rel="noreferrer">
+            <a href={"#services-section"} rel="noreferrer">
               <Text variant="body">სტანდარტული დალაგება</Text>
             </a>
 
-            <a href={"./"} rel="noreferrer">
+            <a href={"#services-section"} rel="noreferrer">
               <Text variant="body">გენერალური დალაგება </Text>
             </a>
-            <a href={"./"} rel="noreferrer">
+            <a href={"#services-section"} rel="noreferrer">
               <Text variant="body">რემონტის შემდგომი დალაგება</Text>
             </a>
-            <a href={"./"} rel="noreferrer">
+            <a href={"#services-section"} rel="noreferrer">
               <Text variant="body">ავეჯის ქიმწმენდა</Text>
             </a>
-            <a href={"./"} rel="noreferrer">
+            <a href={"#services-section"} rel="noreferrer">
               <Text variant="body">ვიტრაჟების წმენდა</Text>
             </a>
-            <a href={"./"} rel="noreferrer">
+            <a href={"#services-section"} rel="noreferrer">
               <Text variant="body">სადარბაზოს დალაგება</Text>
             </a>
           </div>

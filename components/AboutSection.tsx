@@ -7,7 +7,7 @@ import { usePlatform } from "../hooks";
 export const AboutSection = () => {
   const isMobile = usePlatform();
   return (
-    <div className="md:mt-36 mt-16">
+    <div className="md:mt-36 mt-16" id="about-section">
       <div className="md:mx-[200px] mx-6 flex justify-center items-center">
         <Image
           src="/assets/aboutCover.png"

@@ -31,15 +31,18 @@ export const Header = () => {
           </a>
 
           <div className="md:flex flex-row items-center gap-12">
-            <Link href="/" className="hover:opacity-70">
+            <Link href="#services-section" className="hover:opacity-70">
               <Text variant="label">სერვისები</Text>
             </Link>
 
-            <Link href="/" className="hover:opacity-70">
+            <Link href="#about-section" className="hover:opacity-70">
               <Text variant="label">ჩვენს შესახებ</Text>
             </Link>
 
-            <Button label="კონტაქტი" />
+            <Button
+              label="კონტაქტი"
+              onClick={() => router.push("#contact-form")}
+            />
           </div>
         </div>
       )}
