@@ -25,7 +25,7 @@ export const SocialsInfo = () => {
         <div className="flex flex-row md:mt-8 mt-4 gap-2">
           <EmailIcon />
           <Text variant="body" className="text-opacity-70">
-            info@cleantime.com
+            info@cleantime.ge
           </Text>
         </div>
 
