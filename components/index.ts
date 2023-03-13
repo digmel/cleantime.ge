@@ -10,3 +10,5 @@ export * from "./HeroSection";
 export * from "./ServicesSection";
 export * from "./AboutSection";
 export * from "./SocialsInfo";
+export * from "./ReviewCard";
+export * from "./ReviewSection";

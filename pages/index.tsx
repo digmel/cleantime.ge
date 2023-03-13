@@ -3,6 +3,7 @@ import {
   ContactSection,
   HeroSection,
   Layout,
+  ReviewSection,
   ServicesSection,
 } from "../components";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <ServicesSection />
       <AboutSection />
       <ContactSection />
+      <ReviewSection />
     </Layout>
   );
 }
